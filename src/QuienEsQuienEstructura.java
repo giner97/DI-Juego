@@ -599,9 +599,9 @@ public class QuienEsQuienEstructura  extends JFrame implements ListSelectionList
 		else if (e.getSource()==acercaDe) {
 			
 			try {
-			     informacionPdf = new File ("info.pdf");
-			     Desktop.getDesktop().open(informacionPdf);
-			}catch (IOException ex) {
+			     Runtime.getRuntime().exec("hh.exe C:/Users/dam2/Desktop/Nueva carpeta (2)/Guess Who/acercaDe.chm");
+			}
+			catch (Exception ex) {
 			     ex.printStackTrace();
 			}
 		}
